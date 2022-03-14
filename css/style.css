@@ -1,0 +1,298 @@
+@font-face {
+    font-family: csfont;
+    src: url(../font/CornerStone/Cornerstone.ttf);
+}
+@font-face {
+    font-family: poppins;
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+:root {
+    --first-color : #EEEDDE;
+    --second-color : #E0DDAA;
+    --third-color : #203239;
+    --fourth-color : #141E27;
+}
+
+/*  Owl Carousel  */
+.ow-l, .ow-r {
+    color: #0000002A;
+    font-size: 30px;
+    transition: all ease-in-out 0.5s;
+}
+.owl-prev , .owl-next{
+    background: transparent !important;
+}
+.ow-l:hover{
+    color:  var(--third-color);
+}
+.ow-r:hover{
+    color:  var(--third-color);
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/* Header */
+header{
+    width: 100%;
+    height: 800px;
+    background-image: url('../images/bg.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Navbar */
+.navbar {
+    background-color: transparent;
+}
+.navbar-brand {
+    font-family: csfont;
+    color: var(--first-color);
+    font-size: 30px;
+    transition: all 0.5s ease-in-out;
+}
+.navbar-brand:hover {
+    color: var(--third-color);
+}
+.navbar-toggler .navbar-toggler-icon{
+    background: var(--third-color) !important;
+}
+.navbar-toggler {
+    border: 3px solid var(--first-color);
+    color: var(--first-color);
+    transition: all ease-in-out 0.5s;
+}
+.navbar-toggler:hover {
+    border: 3px solid var(--third-color);
+    color: var(--third-color);
+}
+.navbar-toggler:focus {
+    border: none;
+    outline: none;
+}
+.offcanvas {
+    background: var(--fourth-color);
+    font-family: poppins;
+}
+.offcanvas-header h5 {
+    color: var(--first-color);
+}
+.offcanvas-header i {
+    color: var(--third-color);
+    background: transparent;
+    transition: 0.5s all ease-in-out;
+}
+.offcanvas-header button {
+    background: transparent;
+    border: 3px solid var(--third-color);
+    padding: 0px 7px;
+    border-radius: 5px;
+    transition: 0.5s all ease-in-out;
+}
+.offcanvas-header button:hover {
+    background: transparent;
+    color: var(--first-color);
+    border: 3px solid var(--first-color);
+}
+.offcanvas-header i:hover {
+    background: transparent;
+    color: var(--first-color);
+}
+.offcanvas .nav-link {
+    color: var(--first-color);
+    transition: all ease-in-out 0.5s;
+}
+.offcanvas .nav-link:hover {
+    transform: scale(1.5);
+}
+.offcanvas .nav-item {
+    text-align: center;
+}
+.offcanvas hr {
+    background-color: var(--first-color);
+}
+.navbar-bg {
+    background-color: #000000;
+}
+
+/* Banner */
+.banner{
+    position: relative;
+    height: 100%;
+}
+.banner-content{
+    text-align: center;
+    position: absolute;
+    width: 40%;
+    top: 75%;
+    left: 30%;
+    transform: translateY(-50%, -50%);
+}
+
+h1{
+    font-family: csfont;
+    font-weight: 700;
+}
+.content-title{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--first-color) !important;
+    letter-spacing: 3px;
+    color: transparent;
+}
+.site-color{
+    color: var(--second-color);
+}
+.banner-title{
+    font-size: 50px;
+}
+.para{
+    font-family: poppins;
+    color: var(--third-color);
+    font-weight: bold;
+    line-height: 1rem;
+    margin: 10px 0px;
+}
+.btn-lm {
+    color: var(--third-color);
+    font-size: 20px;
+    transition: all ease-in-out 0.5s;
+}
+.btn-lm:hover {
+    color: var(--first-color);
+}
+
+/*  Learn  */
+.learn {
+    padding-top: 50px;
+}
+.learn h1, .contact  h1, .feedback h1, .about h1{
+    font-size: 50px !important;
+    color: var(--third-color);
+}
+
+/* Card */
+.learn .card {
+    width: 75% !important;
+}
+.learn .item {
+    display: flex;
+    justify-content: center;
+}
+.item img {
+    padding: 10px;
+    border-radius: 5px;
+}
+.item .card-title {
+    font-family: csfont;
+    color: var(--fourth-color);
+}
+.item .card-text {
+    font-family: poppins;
+    font-size: 15px;
+    color: var(--third-color);
+}
+
+/*  Contact  */
+.contact{
+    font-family: poppins;
+    color:  var(--third-color);
+    cursor: pointer;
+    color: var(--third-color);
+}
+.contact #lable-ct{
+    color: #0000006A;
+}
+.contact  h4 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.content-item label{
+    font-weight: bold;
+}
+.contact .brand-ct  i{
+    font-size: 25px;
+    transition: 0.5s all ease-in-out;
+}
+.brand-ct i:hover{
+    color: var(--fourth-color);
+    transform: scale(1.3);
+}
+.contact .cus-form {
+    border-left: 1px solid #0000002A;
+}
+
+/*  Feedback  */
+.feedback{
+    font-family: poppins;
+}
+
+/* About */
+.about h3{
+    color: var(--third-color);
+    font-family: csfont;
+}
+.about p {
+    color: var(--third-color);
+    font-family: poppins;
+    text-align: justify;
+    letter-spacing: normal;
+}
+
+@media (max-width: 992px) {
+    .toggle{
+        display: block;
+    }
+    .navbar-menu{
+        display: none;
+        width: 100%;
+    }
+    .navbar-menu li{
+        display: block;
+    }
+    .navbar-menu a{
+        width: 100%;
+    }
+    .toggle:hover + .navbar-menu{
+        display: block;
+    }
+
+    /* Header */
+    header {
+        background: #000000;
+        object-fit: cover;
+        color: var(--third-color);
+    }
+
+    /* Banner */
+    .banner-content{
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 35%;
+    }
+
+    /*  Learn  */
+    .learn h1, .contact h1, .feedback h1, .about h1{
+        font-size: 30px !important;
+        color: var(--fourth-color);
+    }
+
+    /*  Contact  */
+    .contact .cus-form {
+        border-left: 0px solid #0000003A;
+    }
+
+    .about h3{
+        font-size: 18px;
+    }
+
+    /*  Owl Carousel  */
+    .ow-l, .ow-r {
+        color: #000000;
+    }
+}
