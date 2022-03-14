@@ -18,10 +18,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
-
 </head>
 <body>
     <header>
@@ -75,9 +75,9 @@
     </header>
 
     <div class="learn" id="learnwithus">
-        <div class="container">
+        <div class="container" >
             <h1 class="mb-5 text-center"><i class="fa-solid fa-graduation-cap"></i> LEARN WITH US</h1>
-            <div class="row pt-0 py-5">
+            <div class="row pt-0 py-5" data-aos="zoom-in">
                 <div class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="card" style="width: 18rem;">
@@ -167,7 +167,7 @@
     <div class="contact" id="contactus">
         <div class="container">
             <h1 class="text-center mb-5"><i class="fa-solid fa-id-card"></i> CONTACT US</h1>
-            <div class="card p-5 shadow p-3 mb-5 bg-body rounded" style="width: 100%;">
+            <div class="card p-5 shadow p-3 mb-5 bg-body rounded" style="width: 100%;" data-aos="fade-up">
                 <div class="row d-flex align-items-center">
                     <div class="col-md-4">
                             <h4 class="text-start">Contact Information</h4>
@@ -255,7 +255,7 @@
     <div class="feedback" id="feedback">
         <div class="container">
             <h1 class="text-center mb-5"><i class="fa-solid fa-comment-dots"></i> FEEDBACK</h1>
-            <div class="card p-5 shadow p-3 mb-5 bg-body rounded d-flex align-items-center" style="width: 100%; ">
+            <div class="card p-5 shadow p-3 mb-5 bg-body rounded d-flex align-items-center" style="width: 100%; " data-aos="flip-left">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="mb-3">
@@ -353,7 +353,7 @@
     <div class="about" id="about">
         <div class="container">
             <h1 class="text-center mb-5"><i class="fa-solid fa-circle-info"></i> ABOUT US</h1>
-            <div class="card p-5 shadow p-3 mb-5 bg-body rounded d-flex align-items-center">
+            <div class="card p-5 shadow p-3 mb-5 bg-body rounded d-flex align-items-center" data-aos="zoom-in-up">
                 <img src="https://gif-avatars.com/img/200x200/anon.gif" width="200" height="200"alt="">
                 <h3 class="m-3">White Hackers Family</h3>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugit adipisci alias dicta? Sequi quam consequatur inventore laborum quis culpa sint libero perferendis amet vero numquam in, reprehenderit sit et! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque labore tenetur temporibus laborum asperiores quibusdam perspiciatis, numquam commodi unde, accusantium non autem harum adipisci vitae atque ipsum! Soluta, quaerat nihil?</p>
@@ -363,7 +363,8 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
         $('.owl-carousel').owlCarousel({
             loop:true,
@@ -389,6 +390,9 @@
                 navbar.classList.remove("navbar-bg");
             }
         }
+    </script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
